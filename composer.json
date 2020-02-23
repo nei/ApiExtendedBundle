@@ -1,6 +1,7 @@
 {
     "name": "nei/api-extended-bundle",
     "type": "symfony-bundle",
+    "keywords": ["pim", "akeneo"],
     "description": "Extend Akeneo API",
     "require": {
         "akeneo/pim-community-dev": "~3.2.13"
@@ -13,7 +14,7 @@
         }
     ],
     "autoload": {
-        "psr-0": { "Nei\\Bundle\\ApiExtendedBundle": "" }
+        "psr-4": { "Pim\\Bundle\\ApiExtendedBundle\\": "src/" }
     },
     "target-dir": "Nei/Bundle/ApiExtendedBundle",
     "minimum-stability": "dev"

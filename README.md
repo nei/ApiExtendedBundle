@@ -13,12 +13,24 @@ From your application root:
 
     $ php composer.phar require --prefer-dist "nei/api-extended-bundle=dev-master"
 
-Register the bundle by adding the following line inside the `app/AppKernel.php` file, just before the "return $bundles;" line:
+Enable the bundle in the `app/AppKernel.php` file in the `registerProjectBundles()` method:
 
-    $bundles[] = new Nei\Bundle\ApiExtendedBundle\NeiApiExtendedBundle();
+```php
+    $bundles = [
+        // ...
+        new Nei\Bundle\ApiExtendedBundle\NeiApiExtendedBundle(),
+    ]
+```
 
 Include the routing on the top of your main routing.yml file:
 
 nei_api_extended:
     resource: "@NeiApiExtenedBundle/Resources/config/routing.yml"
     prefix:   /
+
+Now let's clean your cache and dump your assets:
+
+```bash
+    php bin/console cache:warmup --env=prod
+    php bin/console pim:installer:assets --env=prod
+```

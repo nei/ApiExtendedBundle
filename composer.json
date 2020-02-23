@@ -1,0 +1,20 @@
+{
+    "name": "nei/api-extended-bundle",
+    "type": "symfony-bundle",
+    "description": "Extend Akeneo API",
+    "require": {
+        "akeneo/pim-community-dev": "~3.2.13"
+    },
+    "license": "OSL",
+    "authors": [
+        {
+            "name": "Nei Santos",
+            "email": "nrauni@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-0": { "Nei\\Bundle\\ApiExtendedBundle": "" }
+    },
+    "target-dir": "Nei/Bundle/ApiExtendedBundle",
+    "minimum-stability": "dev"
+}

@@ -20,5 +20,5 @@ Register the bundle by adding the following line inside the `app/AppKernel.php` 
 Include the routing on the top of your main routing.yml file:
 
 nei_api_extended:
-    resource: "@ApiExtenedBundle/Resources/config/routing.yml"
+    resource: "@NeiApiExtenedBundle/Resources/config/routing.yml"
     prefix:   /

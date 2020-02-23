@@ -16,6 +16,5 @@
     "autoload": {
         "psr-4": { "Pim\\Bundle\\ApiExtendedBundle\\": "src/" }
     },
-    "target-dir": "Nei/Bundle/ApiExtendedBundle",
     "minimum-stability": "dev"
 }

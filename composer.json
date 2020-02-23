@@ -5,7 +5,7 @@
     "require": {
         "akeneo/pim-community-dev": "~3.2.13"
     },
-    "license": "OSL",
+    "license": "CC-BY-4.0",
     "authors": [
         {
             "name": "Nei Santos",

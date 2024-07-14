@@ -4,7 +4,7 @@
     "keywords": ["pim", "akeneo"],
     "description": "Extend Akeneo API",
     "require": {
-        "akeneo/pim-community-dev": "~3.2.13"
+        "akeneo/pim-community-dev": "^4.0.0"
     },
     "license": "CC-BY-4.0",
     "authors": [
